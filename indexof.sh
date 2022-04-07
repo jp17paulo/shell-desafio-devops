@@ -9,7 +9,7 @@ read algo
 # retorno=`echo $frase | grep -o "$algo"` # para fazer scan de uma regex
 retorno=`echo $frase | grep $algo` # trago a frase inteira se achar a string
 
-if [ -z "$retorno" ]; then # se o retorno venho null
+if [ -z "$retorno" ]; then # se o retorno veio null
   echo "Não encontrei"
 else
   echo "Encontrei"
